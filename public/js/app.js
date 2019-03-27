@@ -1,4 +1,3 @@
-console.log("Client side javascript file is loaded")
 
  // Fetch é uma função que permite obter dados de uma forma assincrona! (tal como no node.js)
 // o que significa que não teremos acesso a data imediatamente, em vez disso providenciamos uma função, e essa função será chamada num futuro, quando a DATA estiver disponivel 
