@@ -56,7 +56,7 @@ weatherForm.addEventListener("submit", (e)=> { // Precisamos de passar 2 argumen
     messageOne.textContent = "Loading..." //Com este método passamos info para o paragrafo, mesmo antes da função fetch, assim que é submetido aparece primeiro a messagem "Loading..." e de seguida, já dentro da função fecht apresenta sim a informação
     messageTwo.textContent = ""
 
-    fetch("http://127.0.0.1:3000/weather?address=" + location).then((response) => {
+    fetch("/weather?address=" + location).then((response) => {
     response.json().then((data) => {
         if(data.error) { // erro foi definido na callback function do script geocode.js - em que dissemos que - caso haja um erro, dispara para a callback funtion algo, neste caso uma string com informação.
             console.log(data.error)
